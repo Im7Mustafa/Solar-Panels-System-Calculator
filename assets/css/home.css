@@ -1,0 +1,165 @@
+.hero-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../pics/solar-bg.jpg') no-repeat center center/cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 50px;
+    border-radius: 20px;
+    max-width: 800px;
+    width: 90%;
+}
+
+.hero-content .title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content .subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #e2e8f0;
+}
+
+.glass-btn {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 35px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.glass-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.steps-container {
+    padding: 80px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #0f172a;
+}
+
+.steps-main-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #4ade80;
+    padding-bottom: 10px;
+}
+
+.steps-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.step-box {
+    flex: 1;
+    min-width: 280px;
+    padding: 40px 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.step-box:hover {
+    transform: translateY(-10px);
+}
+
+.step-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #4ade80;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+.step-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.step-desc {
+    font-size: 16px;
+    color: #94a3b8;
+    line-height: 1.5;
+}
+
+.footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.footer p {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 30px 20px;
+    }
+    
+    .hero-content .title {
+        font-size: 32px;
+    }
+    
+    .hero-content .subtitle {
+        font-size: 16px;
+    }
+    
+    .steps-container {
+        padding: 50px 20px;
+    }
+    
+    .steps-main-title {
+        font-size: 26px;
+        text-align: center;
+    }
+    
+    .step-box {
+        padding: 30px 20px;
+        min-width: 100%;
+    }
+}

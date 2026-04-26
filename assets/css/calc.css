@@ -1,0 +1,231 @@
+.calc-page-container {
+    min-height: 100vh;
+    padding: 120px 50px 50px 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: url('../pics/solar-bg.jpg') no-repeat center center/cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.calc-wrapper {
+    position: relative;
+    z-index: 2; 
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.input-col, .output-col {
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-col {
+    flex: 1;
+    max-width: 400px;
+}
+
+.output-col {
+    flex: 2;
+}
+
+.col-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #4ade80;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.label {
+    font-size: 14px;
+    color: #cbd5e1;
+    margin-bottom: 8px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: #4ade80;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.icons-row {
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    padding: 10px;
+}
+
+.hardware-section {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hardware-title {
+    font-size: 15px;
+    color: #cbd5e1;
+    margin-bottom: 12px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.15);
+    padding-bottom: 8px;
+}
+
+.hardware-title span {
+    color: #4ade80;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.icons-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.placeholder-text {
+    color: #64748b;
+    font-style: italic;
+    margin: auto;
+}
+
+.hardware-icon {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.5));
+    transition: transform 0.2s ease;
+}
+
+.hardware-icon:hover {
+    transform: scale(1.1);
+}
+
+.placeholder-text {
+    color: #64748b;
+    font-style: italic;
+    margin: auto;
+}
+
+.hardware-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.5));
+}
+
+.glass-divider {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    margin: 25px 0;
+}
+
+.results-row {
+    display: flex;
+    gap: 20px;
+}
+
+.result-box {
+    flex: 1;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.box-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.result-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #e2e8f0;
+}
+
+.result-text span {
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.alert-box {
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.alert-warning {
+    background: rgba(234, 179, 8, 0.2);
+    border: 1px solid #eab308;
+    color: #fde047;
+}
+
+.alert-danger {
+    background: rgba(239, 68, 68, 0.2);
+    border: 1px solid #ef4444;
+    color: #fca5a5;
+}
+
+@media (max-width: 768px) {
+    .calc-page-container {
+        padding: 150px 20px 40px 20px;
+    }
+    
+    .calc-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .input-col, .output-col {
+        max-width: 100%;
+        padding: 20px 15px;
+    }
+    
+    .results-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .col-title, .box-title {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,88 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator - Solar Panels System</title>
+    <link rel="icon" type="image/png" href="../assets/icons/favicon.png">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/calc.css">
+</head>
+
+<body>
+
+    <div class="navbar glass-effect">
+        <div class="logo">SolarCalc</div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="calc.html" class="active">Calculator</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+    </div>
+
+    <div class="calc-page-container">
+        <div class="overlay"></div>
+
+        <div class="calc-wrapper">
+
+            <div class="input-col glass-effect">
+                <p class="col-title">System Inputs</p>
+
+                <div class="input-group">
+                    <p class="label">Estimated Consumption (Amperes)</p>
+                    <input type="number" id="consumption" min="1" placeholder="e.g., 10">
+                </div>
+
+                <div class="input-group">
+                    <p class="label">Number of Solar Panels</p>
+                    <input type="number" id="panels" min="0" value="0">
+                </div>
+
+                <div class="input-group">
+                    <p class="label">Number of Batteries (12.5 kW)</p>
+                    <input type="number" id="batteries" min="0" value="0">
+                </div>
+
+                <div class="input-group">
+                    <p class="label">Number of Inverters (8 kVA)</p>
+                    <input type="number" id="inverters" min="1" value="1">
+                </div>
+            </div>
+
+            <div class="output-col glass-effect">
+
+                <div id="alert-box" class="alert-box hidden"></div>
+
+                <div class="icons-row" id="icons-container">
+                    <p class="placeholder-text">Enter quantities to see your hardware here...</p>
+                </div>
+
+                <div class="glass-divider"></div>
+
+                <div class="results-row">
+
+                    <div class="result-box glass-effect">
+                        <p class="box-title">Day Power (Panels)</p>
+                        <p class="result-text">Amperes: <span id="day-amps">0</span> A</p>
+                        <p class="result-text">Power: <span id="day-kw">0</span> kW</p>
+                    </div>
+
+                    <div class="result-box glass-effect">
+                        <p class="box-title">Night Power (Batteries)</p>
+                        <p class="result-text">Total Storage: <span id="night-kw">0</span> kW</p>
+                        <p class="result-text">Max Output: <span id="night-amps">0</span> A</p>
+                        <p class="result-text" style="color: #4ade80;">Est. Time: <span id="night-hours">0</span> Hours
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../assets/js/calc.js"></script>
+</body>
+
+</html>
