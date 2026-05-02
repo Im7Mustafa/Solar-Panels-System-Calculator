@@ -73,18 +73,18 @@ The project consists of four interconnected, fully responsive pages, each servin
 
 ### 1. Home Page (Landing Page)
 Serves as the main gateway to the system. It features a prominent Hero Section and a step-by-step guide explaining how the calculator works, designed to immediately engage the user.
-> ![Home Page](index.html) 
+
 ### 2. About Page
 Dedicated to the theoretical background of the project. It uses spacious, readable glass-sections to explain the vision, the underlying algorithms, and the importance of hardware safety limits.
-> ![About Page](pages/about.html) 
+
 
 ### 3. Calculator Page (The Core Engine)
 The main functional interface structured in a two-column layout. The left column captures user inputs (Amperes, panels, batteries), while the right column acts as a dynamic dashboard, rendering hardware icons and real-time calculations without requiring a page reload.
-> ![Calculator Page](pages/calc.html) 
+
 
 ### 4. Contact Us Page
 Provides a seamless communication channel. It features a fully styled form with floating inputs, maintaining the Glassmorphism identity and offering a professional closing to the user journey.
-> ![Contact Us Page](pages/contact.html) 
+
 ---
 
 ## ✅ Conclusion
