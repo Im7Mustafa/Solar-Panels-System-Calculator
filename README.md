@@ -1,9 +1,9 @@
 # Solar Panels System Calculator ☀️
 
-**Academic Project:** Web Programming & Design Course Requirement
-**Major:** Computer Science, Second Stage
-**Academic Year:** 2025 – 2026
-**Author:** Mustafa A. Ghafour
+* **Academic Project:** Web Programming & Design Course Requirement
+* **Major:** Computer Science, Second Stage
+* **Academic Year:** 2025 – 2026
+* **Author:** Mustafa A. Ghafour
 
 ---
 
